@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body>
+    <h1>登录成功</h1>
+    <script>
+        // 读取跳转后url上面的用户名
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        document.write("<h3>欢迎你, " + username + "!</h3>");
+    </script>
+</body>
+</html>

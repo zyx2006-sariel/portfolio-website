@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .login-container {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 0 50px;
+
+        }
+        input[type="text"] {
+            width: 200px;
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            text-align: center;
+            width: 250px;
+            margin: 30px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>登录页面</h2>
+        <!-- action完成提交表单页面跳转, 在input框输入的用户名会被放入url： -->
+        <form id="loginForm" action="首页.html">
+            <label for="username">请输入你的名字:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <input type="submit" value="登录">
+        </form>
+        <p id="message"></p>
+</body>
+</html>

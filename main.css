@@ -1,0 +1,19 @@
+body {                /*页面基本样式*/
+  margin: 20px;
+  font-size: 14px;
+  color: #fb5;
+  }
+tr{height:24px;color: #223; background-color: #ffc514;}      /*tr基本样式*/
+td {padding: 0.5em 3em;}/*td基本样式*/
+th {                          /*表头样式*/
+  color: #FFF;
+  background-color: #1759a8;
+ }
+tr.odd td{                    /*奇数行样式*/
+  color: #223;
+  background-color: #fceba6;
+}
+tr.highlight td{               /*移入行样式*/
+  color: #FFF;
+  background-color: #008000;
+}

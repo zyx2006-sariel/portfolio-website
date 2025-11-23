@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线简历生成器</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>在线简历生成器</h1>
+      <p>填写个人信息，生成专业简历</p>
+    </header>
+
+    <div class="main-content">
+      <!-- 表单区域 -->
+      <div class="form-section">
+        <h2>个人信息</h2>
+        <form id="resumeForm" class="resume-form">
+          <div class="form-group">
+            <label for="fullName">姓名 *</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">邮箱 *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">电话 *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">工作经历</label>
+            <textarea id="experience" name="experience" rows="5"
+              placeholder="请详细描述您的工作经历，包括公司名称、职位、工作时间和主要职责"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="education">教育背景</label>
+            <textarea id="education" name="education" rows="3" placeholder="请填写您的学历信息，包括学校名称、专业、毕业时间"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="generateBtn" class="btn btn-primary">生成简历</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 预览区域 -->
+      <div class="preview-section">
+        <div class="template-selector">
+          <h3>选择模板</h3>
+          <div class="template-buttons">
+            <button type="button" class="template-btn active" data-template="classic">经典模板</button>
+            <button type="button" class="template-btn" data-template="modern">现代模板</button>
+            <button type="button" class="template-btn" data-template="minimal">简约模板</button>
+          </div>
+        </div>
+
+        <div class="resume-preview">
+          <div id="resumeContent" class="resume-content classic">
+            <div class="resume-placeholder">
+              <h3>简历预览</h3>
+              <p>请填写左侧表单信息并点击"生成简历"按钮来预览您的简历</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
